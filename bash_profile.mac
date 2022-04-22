@@ -1,0 +1,53 @@
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+export PATH=$HOME/.toolbox/bin:$PATH
+
+weather()
+{
+    curl -s "wttr.in/$1?m1"
+}
+ 
+alias py='python3'
+ 
+ 
+# Mid Way Yubi Key
+alias mw='mwinit && ssh-add -D && ssh-add'
+alias ki='kinit'
+
+#My alias
+alias dev-dsk="ssh dev-dsk-ravchada-2a-623a8abc.us-west-2.amazon.com"
+alias dev-dsk-al2="ssh dev-dsk-ravchada-2b-0b01eb04.us-west-2.amazon.com"
+alias ubuntu-dsk='ssh -i "/Users/ravchada/Documents/pem/ravchada-ubuntu.pem" ubuntu@54.213.7.167'
+alias wireshark_plugins='cd /Users/ravchada/.local/lib/wireshark/plugins'
+
+export BRAZIL_PLATFORM_OVERRIDE='AL2012'
+ 
+alias bb='brazil-build'
+alias bba='brazil-build apollo-pkg'
+alias bre='brazil-runtime-exec'
+alias brc='brazil-recursive-cmd'
+alias bws='brazil ws'
+alias bwsuse='bws use --gitMode -p'
+alias bwscreate='bws create -n'
+alias bbr='brc brazil-build'
+alias bball='brc --allPackages'
+alias bbb='brc --allPackages brazil-build'
+alias bbra='bbr apollo-pkg'
+#alias ssh-odin='/apollo/env/BigMacTools/bin/ssh-odin'
+ 
+ # User specific aliases and functions
+ 
+#alias brazil-octane='/apollo/env/OctaneBrazilTools/bin/brazil-octane'
+#export PATH=/apollo/env/AmazonAwsCli/bin/:$PATH
+#alias third-party-promote='/apollo/env/BrazilThirdPartyTool/bin/brazil-third-party-tool promote'
+#alias third-party='/apollo/env/BrazilThirdPartyTool/bin/brazil-third-party-tool'
+#export AWS_DEFAULT_REGION='us-west-2'
+#export BIG_MAC_INTERNAL_ZONE='us-west-2'
+#export BIG_MAC_ACCOUNT_ID='166553937538'
+#export AWS_CREDENTIALS_ODIN='com.amazon.aws.ravchada.cook.aws-access-key'
+#export AWS_DEFAULT_REGION='us-west-2'
+#export SSH_ODIN_MATERIAL_SET='com.amazon.aws.ravchada.us-west-2.bigmac-ssh-key'
+ 
+alias please='sudo'
+export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
